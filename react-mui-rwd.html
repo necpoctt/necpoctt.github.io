@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>React + MUI 響應式網頁：桌機與手機分開元件｜廖哲皓 Howard Liao</title>
+<meta name="description" content="廖哲皓（Howard Liao）的作品：用 React、Material UI 和 TypeScript 建立的 RWD 範例。依螢幕寬度在路由層切換桌機和手機兩套元件，並用 react-window 虛擬化處理大量資料。">
+<meta name="author" content="廖哲皓">
+<link rel="canonical" href="https://necpoctt.github.io/react-mui-rwd.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="React + MUI 響應式網頁：桌機與手機分開元件｜廖哲皓 Howard Liao">
+<meta property="og:description" content="廖哲皓（Howard Liao）的作品：用 React、Material UI 和 TypeScript 建立的 RWD 範例。依螢幕寬度在路由層切換桌機和手機兩套元件，並用 react-window 虛擬化處理大量資料。">
+<meta property="og:url" content="https://necpoctt.github.io/react-mui-rwd.html">
+<meta property="og:image" content="https://github.com/necpoctt.png?size=400">
+<meta property="og:locale" content="zh_TW">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "React + MUI 響應式網頁：桌機與手機分開元件",
+  "description": "用 React、Material UI 和 TypeScript 建立的 RWD 範例。依螢幕寬度在路由層切換桌機和手機兩套元件，並用 react-window 虛擬化處理大量資料。",
+  "url": "https://necpoctt.github.io/react-mui-rwd.html",
+  "codeRepository": "https://github.com/necpoctt/reactMuiRWD",
+  "programmingLanguage": [
+    "TypeScript"
+  ],
+  "keywords": "React, TypeScript, Material UI, React Router, react-window, Testing Library, ESLint, Prettier",
+  "author": {
+    "@type": "Person",
+    "@id": "https://necpoctt.github.io/#person",
+    "name": "廖哲皓",
+    "alternateName": "Howard Liao",
+    "url": "https://necpoctt.github.io/"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="meta"><a href="./">← 廖哲皓 Howard Liao</a></p>
+  <header>
+    <div>
+      <h1 style="font-size:1.7rem">React + MUI 響應式網頁：桌機與手機分開元件</h1>
+      <p class="headline">作者：廖哲皓（Howard Liao）・Frontend Lead</p>
+      <nav class="links" aria-label="專案連結">
+        <a href="https://github.com/necpoctt/reactMuiRWD">GitHub 原始碼</a>
+      </nav>
+    </div>
+  </header>
+
+  <section aria-labelledby="intro">
+    <h2 id="intro">專案簡介</h2>
+    <p>用 React、Material UI 和 TypeScript 建立的 RWD 範例。依螢幕寬度在路由層切換桌機和手機兩套元件，並用 react-window 虛擬化處理大量資料。</p>
+  </section>
+
+  <section aria-labelledby="points">
+    <h2 id="points">實作重點</h2>
+    <ul class="timeline">
+      <li>用 MUI 的 useMediaQuery 在路由層決定載入桌機或手機版，並用 React.lazy 只下載需要的那一套。</li>
+      <li>桌機版用 FixedSizeGrid 格狀排列，只渲染畫面上看得到的項目。</li>
+      <li>手機版用 FixedSizeList 搭配 InfiniteLoader 做無限捲動，捲到底自動載入下一頁。</li>
+      <li>共用元件（Button、TextField、Loading 等）都有 Testing Library 單元測試。</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="tech">
+    <h2 id="tech">使用技術</h2>
+    <div class="tags">
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Material UI</span>
+      <span>React Router</span>
+      <span>react-window</span>
+      <span>Testing Library</span>
+      <span>ESLint</span>
+      <span>Prettier</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="more">
+    <h2 id="more">其他作品</h2>
+    <ul class="timeline">
+      <li><a href="micro-frontend-demo.html">微前端示範：React 與 Vue 元件在同一頁共存</a></li>
+      <li><a href="angular-kendo-ui-demo.html">Angular 21 + Kendo UI 企業後台範例</a></li>
+      <li><a href="webplugin.html">可嵌入任何網站的聊天外掛（React + iframe）</a></li>
+    </ul>
+  </section>
+  <footer>© 2026 廖哲皓 Howard Liao・<a href="./">首頁</a>・<a href="articles.html">文章</a></footer>
+</main>
+</body>
+</html>

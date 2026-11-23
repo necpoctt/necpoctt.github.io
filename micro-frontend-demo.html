@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微前端示範：React 與 Vue 元件在同一頁共存｜廖哲皓 Howard Liao</title>
+<meta name="description" content="廖哲皓（Howard Liao）的作品：在 Vue 3 主程式裡，透過 Web Components 同時載入 React 19 + ECharts 的圖表和 Vue 3 + Ant Design Vue 的表格，組成一個資源管理儀表板。">
+<meta name="author" content="廖哲皓">
+<link rel="canonical" href="https://necpoctt.github.io/micro-frontend-demo.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="微前端示範：React 與 Vue 元件在同一頁共存｜廖哲皓 Howard Liao">
+<meta property="og:description" content="廖哲皓（Howard Liao）的作品：在 Vue 3 主程式裡，透過 Web Components 同時載入 React 19 + ECharts 的圖表和 Vue 3 + Ant Design Vue 的表格，組成一個資源管理儀表板。">
+<meta property="og:url" content="https://necpoctt.github.io/micro-frontend-demo.html">
+<meta property="og:image" content="https://github.com/necpoctt.png?size=400">
+<meta property="og:locale" content="zh_TW">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "微前端示範：React 與 Vue 元件在同一頁共存",
+  "description": "在 Vue 3 主程式裡，透過 Web Components 同時載入 React 19 + ECharts 的圖表和 Vue 3 + Ant Design Vue 的表格，組成一個資源管理儀表板。",
+  "url": "https://necpoctt.github.io/micro-frontend-demo.html",
+  "codeRepository": "https://github.com/necpoctt/micro-frontend-demo",
+  "programmingLanguage": [
+    "TypeScript",
+    "JavaScript"
+  ],
+  "keywords": "Vue 3, React 19, TypeScript, Vite library mode, Web Components, Shadow DOM, ECharts, Ant Design Vue",
+  "author": {
+    "@type": "Person",
+    "@id": "https://necpoctt.github.io/#person",
+    "name": "廖哲皓",
+    "alternateName": "Howard Liao",
+    "url": "https://necpoctt.github.io/"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="meta"><a href="./">← 廖哲皓 Howard Liao</a></p>
+  <header>
+    <div>
+      <h1 style="font-size:1.7rem">微前端示範：React 與 Vue 元件在同一頁共存</h1>
+      <p class="headline">作者：廖哲皓（Howard Liao）・Frontend Lead</p>
+      <nav class="links" aria-label="專案連結">
+        <a href="https://github.com/necpoctt/micro-frontend-demo">GitHub 原始碼</a>
+        <a href="https://micro-frontend-demo-mu.vercel.app/">線上展示</a>
+        <a href="https://medium.com/@necpoctt/d7c67d8f0766">Medium 文章</a>
+      </nav>
+    </div>
+  </header>
+
+  <section aria-labelledby="intro">
+    <h2 id="intro">專案簡介</h2>
+    <p>在 Vue 3 主程式裡，透過 Web Components 同時載入 React 19 + ECharts 的圖表和 Vue 3 + Ant Design Vue 的表格，組成一個資源管理儀表板。</p>
+  </section>
+
+  <section aria-labelledby="points">
+    <h2 id="points">實作重點</h2>
+    <ul class="timeline">
+      <li>兩個元件庫各自用 Vite 的 library mode 打包成單一 JS 檔，主程式用 script 標籤載入即可使用。</li>
+      <li>Vue 元件用 defineCustomElement 轉成 Web Component；React 元件用自寫的轉換函式，在 Shadow DOM 裡用 createRoot 掛載。</li>
+      <li>資料用 JSON 字串透過屬性傳入，事件用 CustomEvent 回傳給主程式。</li>
+      <li>Shadow DOM 隔離樣式，不同框架的元件互不干擾。</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="tech">
+    <h2 id="tech">使用技術</h2>
+    <div class="tags">
+      <span>Vue 3</span>
+      <span>React 19</span>
+      <span>TypeScript</span>
+      <span>Vite library mode</span>
+      <span>Web Components</span>
+      <span>Shadow DOM</span>
+      <span>ECharts</span>
+      <span>Ant Design Vue</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="article">
+    <h2 id="article">相關文章</h2>
+    <p><a href="https://medium.com/@necpoctt/d7c67d8f0766">不用 Module Federation：用 Web Components 讓 React 和 Vue 元件在同一頁共存</a></p>
+  </section>
+
+  <section aria-labelledby="more">
+    <h2 id="more">其他作品</h2>
+    <ul class="timeline">
+      <li><a href="react-mui-rwd.html">React + MUI 響應式網頁：桌機與手機分開元件</a></li>
+      <li><a href="angular-kendo-ui-demo.html">Angular 21 + Kendo UI 企業後台範例</a></li>
+      <li><a href="webplugin.html">可嵌入任何網站的聊天外掛（React + iframe）</a></li>
+    </ul>
+  </section>
+  <footer>© 2026 廖哲皓 Howard Liao・<a href="./">首頁</a>・<a href="articles.html">文章</a></footer>
+</main>
+</body>
+</html>

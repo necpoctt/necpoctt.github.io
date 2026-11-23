@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>可嵌入任何網站的聊天外掛（React + iframe）｜廖哲皓 Howard Liao</title>
+<meta name="description" content="廖哲皓（Howard Liao）的作品：以 React 和 Redux Toolkit 開發、透過 iframe 嵌入其他網站的聊天外掛。外掛和外層網站用 postMessage 溝通，樣式和程式完全隔離。">
+<meta name="author" content="廖哲皓">
+<link rel="canonical" href="https://necpoctt.github.io/webplugin.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="可嵌入任何網站的聊天外掛（React + iframe）｜廖哲皓 Howard Liao">
+<meta property="og:description" content="廖哲皓（Howard Liao）的作品：以 React 和 Redux Toolkit 開發、透過 iframe 嵌入其他網站的聊天外掛。外掛和外層網站用 postMessage 溝通，樣式和程式完全隔離。">
+<meta property="og:url" content="https://necpoctt.github.io/webplugin.html">
+<meta property="og:image" content="https://github.com/necpoctt.png?size=400">
+<meta property="og:locale" content="zh_TW">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "可嵌入任何網站的聊天外掛（React + iframe）",
+  "description": "以 React 和 Redux Toolkit 開發、透過 iframe 嵌入其他網站的聊天外掛。外掛和外層網站用 postMessage 溝通，樣式和程式完全隔離。",
+  "url": "https://necpoctt.github.io/webplugin.html",
+  "codeRepository": "https://github.com/necpoctt/webplugin",
+  "programmingLanguage": [
+    "TypeScript"
+  ],
+  "keywords": "React, TypeScript, Redux Toolkit, iframe, postMessage, Facebook Login",
+  "author": {
+    "@type": "Person",
+    "@id": "https://necpoctt.github.io/#person",
+    "name": "廖哲皓",
+    "alternateName": "Howard Liao",
+    "url": "https://necpoctt.github.io/"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="meta"><a href="./">← 廖哲皓 Howard Liao</a></p>
+  <header>
+    <div>
+      <h1 style="font-size:1.7rem">可嵌入任何網站的聊天外掛（React + iframe）</h1>
+      <p class="headline">作者：廖哲皓（Howard Liao）・Frontend Lead</p>
+      <nav class="links" aria-label="專案連結">
+        <a href="https://github.com/necpoctt/webplugin">GitHub 原始碼</a>
+      </nav>
+    </div>
+  </header>
+
+  <section aria-labelledby="intro">
+    <h2 id="intro">專案簡介</h2>
+    <p>以 React 和 Redux Toolkit 開發、透過 iframe 嵌入其他網站的聊天外掛。外掛和外層網站用 postMessage 溝通，樣式和程式完全隔離。</p>
+  </section>
+
+  <section aria-labelledby="points">
+    <h2 id="points">實作重點</h2>
+    <ul class="timeline">
+      <li>用 iframe 隔離樣式和 JavaScript，外掛不會影響對方網站，也不會被對方網站影響。</li>
+      <li>啟動時透過 postMessage 向外層網站取得設定；展開或收合時通知外層網站調整大小。</li>
+      <li>使用者登入後，前端向後端換取聊天服務的短期 token，第三方金鑰只放在後端。</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="tech">
+    <h2 id="tech">使用技術</h2>
+    <div class="tags">
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Redux Toolkit</span>
+      <span>iframe</span>
+      <span>postMessage</span>
+      <span>Facebook Login</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="more">
+    <h2 id="more">其他作品</h2>
+    <ul class="timeline">
+      <li><a href="micro-frontend-demo.html">微前端示範：React 與 Vue 元件在同一頁共存</a></li>
+      <li><a href="react-mui-rwd.html">React + MUI 響應式網頁：桌機與手機分開元件</a></li>
+      <li><a href="angular-kendo-ui-demo.html">Angular 21 + Kendo UI 企業後台範例</a></li>
+    </ul>
+  </section>
+  <footer>© 2026 廖哲皓 Howard Liao・<a href="./">首頁</a>・<a href="articles.html">文章</a></footer>
+</main>
+</body>
+</html>
