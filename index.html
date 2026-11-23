@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>廖哲皓 Howard Liao | Frontend Lead 前端主管</title>
+<meta name="description" content="廖哲皓（Howard Liao），台北的 Frontend Lead（Principal Engineer），擁有 14 年以上前端開發與 6 年以上前端主管經驗，專長 React、Vue、Angular、TypeScript、Node.js。">
+<meta name="author" content="廖哲皓">
+<link rel="canonical" href="https://necpoctt.github.io/">
+
+<!-- Google Search Console 驗證（拿到驗證碼後，把 content 換掉並取消註解） -->
+<!-- <meta name="google-site-verification" content="貼上你的驗證碼"> -->
+
+<!-- 社群分享預覽 -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="廖哲皓 Howard Liao | Frontend Lead 前端主管">
+<meta property="og:description" content="台北的 Frontend Lead（Principal Engineer），14 年以上前端開發經驗，專長 React、Vue、Angular、TypeScript。">
+<meta property="og:url" content="https://necpoctt.github.io/">
+<meta property="og:image" content="https://github.com/necpoctt.png?size=400">
+<meta property="og:locale" content="zh_TW">
+<meta property="profile:first_name" content="哲皓">
+<meta property="profile:last_name" content="廖">
+<meta name="twitter:card" content="summary">
+
+<!-- 結構化資料：告訴 Google「這個網站代表廖哲皓這個人」，sameAs 把各平台帳號串在一起 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://necpoctt.github.io/",
+  "name": "廖哲皓 Howard Liao | Frontend Lead 前端主管",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://necpoctt.github.io/#person",
+    "name": "廖哲皓",
+    "alternateName": "Howard Liao",
+    "familyName": "廖",
+    "givenName": "哲皓",
+    "url": "https://necpoctt.github.io/",
+    "image": "https://github.com/necpoctt.png?size=400",
+    "jobTitle": "Frontend Lead (Principal Engineer)",
+    "description": "台北的 Frontend Lead（Principal Engineer），擁有 14 年以上前端開發與 6 年以上前端主管經驗，專長 React、Vue、Angular、TypeScript、Node.js。",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "台北市",
+      "addressCountry": "TW"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "致理科技大學",
+      "alternateName": "Chihlee University of Technology"
+    },
+    "knowsAbout": ["JavaScript", "TypeScript", "React", "Vue.js", "Angular", "Node.js", "C#", "ASP.NET", "AWS", "CI/CD", "SEO", "Scrum"],
+    "sameAs": [
+      "https://www.linkedin.com/in/howard-liao-a2325aab/",
+      "https://github.com/necpoctt",
+      "https://www.cake.me/me/necpoctt",
+      "https://medium.com/@necpoctt"
+    ]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #5f6368;
+    --line: #e4e4e0;
+    --accent: #1f6feb;
+    --accent-soft: #e8f0fe;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111214;
+      --card: #1a1b1e;
+      --text: #ececec;
+      --muted: #a0a4aa;
+      --line: #2c2e33;
+      --accent: #6ea8ff;
+      --accent-soft: #1c2a40;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.75;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 40px; }
+  header { display: flex; gap: 28px; align-items: center; margin-bottom: 40px; }
+  header img {
+    width: 120px; height: 120px; border-radius: 50%;
+    object-fit: cover; border: 1px solid var(--line); flex-shrink: 0; background: var(--card);
+  }
+  h1 { margin: 0; font-size: 2.2rem; letter-spacing: .04em; }
+  h1 small { font-size: 1.1rem; font-weight: 500; color: var(--muted); letter-spacing: 0; margin-left: 8px; }
+  .headline { margin: 4px 0 16px; color: var(--muted); font-size: 1.05rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 7px 14px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent);
+    text-decoration: none; font-weight: 500; font-size: .95rem;
+  }
+  .links a:hover { filter: brightness(.95); }
+  .links svg { width: 18px; height: 18px; fill: currentColor; }
+  section {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 24px 28px; margin-bottom: 20px;
+  }
+  h2 { margin: 0 0 12px; font-size: 1.15rem; }
+  p { margin: 0 0 10px; }
+  ul.timeline { list-style: none; margin: 0; padding: 0; }
+  ul.timeline li { padding: 12px 0; border-top: 1px solid var(--line); }
+  ul.timeline li:first-child { border-top: 0; padding-top: 0; }
+  .role { font-weight: 700; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags span {
+    padding: 4px 12px; border-radius: 6px; font-size: .9rem;
+    border: 1px solid var(--line); color: var(--text);
+  }
+  a { color: var(--accent); }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 32px; }
+  @media (max-width: 560px) {
+    main { padding-top: 32px; }
+    header { flex-direction: column; text-align: center; gap: 16px; }
+    h1 small { display: block; margin: 4px 0 0; }
+    .links { justify-content: center; }
+    section { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="https://github.com/necpoctt.png?size=240" alt="廖哲皓 Howard Liao" width="120" height="120">
+    <div>
+      <h1>廖哲皓<small>Howard Liao</small></h1>
+      <p class="headline">Frontend Lead（Principal Engineer）・前端工程・台北</p>
+      <nav class="links" aria-label="個人連結">
+        <a href="https://www.linkedin.com/in/howard-liao-a2325aab/" rel="me">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/necpoctt" rel="me">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.540 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.010.37-2.530-.49-2.690-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.070-1.78-.2-3.64-.89-3.64-3.950 0-.87.31-1.59.82-2.150-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.cake.me/me/necpoctt" rel="me">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+          CakeResume 履歷
+        </a>
+        <a href="https://medium.com/@necpoctt" rel="me">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          Medium
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section aria-labelledby="about">
+    <h2 id="about">關於我</h2>
+    <p>我是廖哲皓（Howard Liao），目前在台北擔任 Frontend Lead（Principal Engineer）。擁有 14 年以上前端開發經驗、6 年以上前端主管經驗，以及 11 年以上後端開發經驗（C#、Node.js、資料庫）。</p>
+    <p>我重視程式碼品質與效能，專注於 CI/CD、單元測試與 End-to-End 測試，也擔任過 Scrum Master，帶領團隊用穩定的流程交付產品。語言能力：中文（母語）、英文。</p>
+  </section>
+
+  <section aria-labelledby="exp">
+    <h2 id="exp">經歷</h2>
+    <ul class="timeline">
+      <li>
+        <div class="role">Frontend Lead（Principal Engineer）</div>
+        <div class="meta">現職・台北・前端主管經驗 6 年以上</div>
+        <p>帶領前端團隊，負責前端架構設計、技術選型、程式碼品質、CI/CD 與自動化測試，並兼任 Scrum Master。</p>
+      </li>
+      <li>
+        <div class="role">前端工程師</div>
+        <div class="meta">前端開發經驗 14 年以上</div>
+        <p>以 React、Vue、Angular、TypeScript 開發網頁應用程式，涵蓋效能優化、SEO、單元測試與 E2E 測試（Karma、Jasmine、Puppeteer）。</p>
+      </li>
+      <li>
+        <div class="role">後端工程師</div>
+        <div class="meta">後端開發經驗 11 年以上</div>
+        <p>以 Node.js、ASP.NET / C#、RESTful API、ORM 開發後端服務，並維運 Nginx、AWS、VMware 環境。</p>
+      </li>
+      <li>
+        <div class="role">致理科技大學</div>
+        <div class="meta">Chihlee University of Technology</div>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">專長</h2>
+    <div class="tags">
+      <span>JavaScript</span>
+      <span>TypeScript</span>
+      <span>React</span>
+      <span>Vue / Vuex</span>
+      <span>Angular</span>
+      <span>Material UI</span>
+      <span>Webpack</span>
+      <span>HTML / CSS</span>
+      <span>Node.js</span>
+      <span>C# / ASP.NET</span>
+      <span>RESTful API</span>
+      <span>Nginx</span>
+      <span>AWS</span>
+      <span>CI/CD</span>
+      <span>Unit Test / E2E Test</span>
+      <span>SEO</span>
+      <span>Scrum Master</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">聯絡方式</h2>
+    <p>歡迎透過 <a href="https://www.linkedin.com/in/howard-liao-a2325aab/" rel="me">LinkedIn</a>、<a href="https://www.cake.me/me/necpoctt" rel="me">CakeResume</a>、<a href="https://medium.com/@necpoctt" rel="me">Medium</a> 或 <a href="https://github.com/necpoctt" rel="me">GitHub</a> 與我聯繫。</p>
+  </section>
+
+  <footer>© 2026 廖哲皓 Howard Liao</footer>
+</main>
+</body>
+</html>
